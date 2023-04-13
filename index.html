@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro Edu</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- Framwork flownbit -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- font awsome -->
+    <script
+      src="https://kit.fontawesome.com/dee7e39ee1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- Nav started -->
+
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="https://flowbite.com/" class="flex items-center">
+            <span
+              class="self-center text-4xl whitespace-nowjrap dark:text-white font-bold"
+              >Pro Edu</span
+            >
+          </a>
+          <div class="flex md:order-2">
+            <button
+              type="button"
+              class="text-blue-600 bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Register
+            </button>
+            <button
+              data-collapse-toggle="navbar-cta"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-cta"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Open main menu</span>
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-cta"
+          >
+            <ul
+              class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-white-700 md:p-0 md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Deals</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Success</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Carosuel -->
+      <div
+        id="indicators-carousel"
+        class="relative w-full my-5"
+        data-carousel="static"
+      >
+        <!-- Carousel wrapper -->
+        <div
+          class="relative h-[210px] md:h-[400px] lg:h-[800px] overflow-hidden rounded-lg"
+        >
+          <!-- Item 1 -->
+          <div class="ease-in-out static" data-carousel-item="active">
+            <img
+              src="images/cover/cover-1.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+
+            <div
+              class="absolute left-0 top-0 text-white bg-black/50 w-full h-full"
+            >
+              <div class="flex justify-center items-center flex-col h-full">
+                <h1
+                  class="text-1xl md:text-4xl lg-text-5xl font-bold text-white text-center"
+                >
+                  Get Started Digital <br />
+                  Learning
+                </h1>
+                <p class="hidden md:block">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="w-full text-center py-2">
+                  <button
+                    type="button"
+                    class="text-blue-600 bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 static ease-in-out"
+            data-carousel-item
+          >
+            <img
+              src="images/cover/cover-2.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+            <div class="absolute top-0 left-0 bg-black/50 w-full h-full">
+              <div class="flex justify-center items-center flex-col h-full">
+                <h2 class="text-5xl text-white">
+                  Get Started Digital <br />
+                  Learning
+                </h2>
+                <p class="text-white">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div>
+                  <button
+                    type="button"
+                    class="text-blue-600 bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="images/cover/cover-3.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+            <div class="absolute left-0 bottom-0 bg-black/50 w-full h-full">
+              <div class="flex justify-center items-center flex-col h-full">
+                <h1 class="text-4xl font-bold text-white text-center">
+                  Get Started Digital <br />
+                  Learning
+                </h1>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <div class="w-full text-center">
+                  <button
+                    type="button"
+                    class="text-blue-600 bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                  >
+                    Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 3"
+            data-carousel-slide-to="2"
+          ></button>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              aria-hidden="true"
+              class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              ></path>
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+      <!-- Courses -->
+      <section class="container mx-auto">
+        <!-- course title -->
+        <div class="flex justify-center items-center flex-col">
+          <h2 class="text-3xl font-bold text-center">
+            Discover Our Popular <br />
+            Courses
+          </h2>
+          <p class="text-center px-5">
+            It is a long established fact that a reader will be distracted by
+            the readable <br />
+            content of a page when looking at its layout.
+          </p>
+        </div>
+        <!-- course item -->
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 my-10">
+          <div class="h-40 flex bg-gray-100 shadow-lg px-5 py-5 gap-5">
+            <img class="w-30 h-30" src="images/course/course-1.png" alt="" />
+            <div>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl font-semibold">
+                Javascript Basic to advanced
+              </h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card
+              </p>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl text-blue-500">
+                Price $343
+              </h2>
+            </div>
+          </div>
+          <div class="h-40 flex bg-gray-100 shadow-lg px-5 py-5 gap-5">
+            <img class="w-30 h-30" src="images/course/course-2.png" alt="" />
+            <div>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl font-semibold">
+                Javascript Basic to advanced
+              </h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card
+              </p>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl text-blue-500">
+                Price $343
+              </h2>
+            </div>
+          </div>
+          <div class="h-40 flex bg-gray-100 shadow-lg px-5 py-5 gap-5">
+            <img class="w-30 h-30" src="images/course/course-3.png" alt="" />
+            <div>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl font-semibold">
+                Javascript Basic to advanced
+              </h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card
+              </p>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl text-blue-500">
+                Price $343
+              </h2>
+            </div>
+          </div>
+          <div class="h-40 flex bg-gray-100 shadow-lg px-5 py-5 gap-5">
+            <img class="w-30 h-30" src="images/course/course-4.png" alt="" />
+            <div>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl font-semibold">
+                Javascript Basic to advanced
+              </h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card
+              </p>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl text-blue-500">
+                Price $343
+              </h2>
+            </div>
+          </div>
+          <div class="h-40 flex bg-gray-100 shadow-lg px-5 py-5 gap-5">
+            <img class="w-30 h-30" src="images/course/course-5.png" alt="" />
+            <div>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl font-semibold">
+                Javascript Basic to advanced
+              </h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card
+              </p>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl text-blue-500">
+                Price $343
+              </h2>
+            </div>
+          </div>
+          <div class="h-40 flex bg-gray-100 shadow-lg px-5 py-5 gap-5">
+            <img class="w-30 h-30" src="images/course/course-1.png" alt="" />
+            <div>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl font-semibold">
+                Javascript Basic to advanced
+              </h2>
+              <p>
+                Some quick example text to build on the card title and make up
+                the bulk of the card
+              </p>
+              <h2 class="text-1xl md:text-1xl lg:text-4xl text-blue-500">
+                Price $343
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center my-5">
+          <button
+            class="rounded-none text-white font-semibold bg-blue-500 p-5 my-5"
+          >
+            See More Courses
+          </button>
+        </div>
+      </section>
+      <!-- working -->
+      <section
+        class="container mx-auto lg:flex justify-evenly bg-gray-50 shadow-md"
+      >
+        <div>
+          <img src="images/working.png" alt="" />
+        </div>
+        <div class="my-16 px-9">
+          <div>
+            <h2 class="text-1xl md:text-3xl lg:text-5xl font-bold">
+              Explore The elearning <br />
+              Institute
+            </h2>
+            <p class="my-5">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form,<br />
+              by injected humour, or randomised words which don't look even
+              slightly believable. <br />
+              If you are going to use a passage of Lorem Ipsum, you need to be
+              sure.<br />
+
+              Anything embarrassing hidden in the middle of text. All the Lorem
+              Ipsum generators on the Internet tend to repeat predefined.
+            </p>
+          </div>
+          <div class="flex gap-16 my-5">
+            <div
+              class="shadow-lg sm:font-semibold md:font-semibold lg:font-bold text-start"
+            >
+              <h2 class="text-4xl font-semibold">3.2k+</h2>
+              <p>Online course</p>
+            </div>
+            <div
+              class="shadow-lg sm:font-semibold md:font-semibold lg:font-bold text-center"
+            >
+              <h2 class="text-4xl font-semibold">360k+</h2>
+              <p>Expert member</p>
+            </div>
+            <div
+              class="shadow-lg sm:font-semibold md:font-semibold lg:font-bold text-end"
+            >
+              <h2 class="text-4xl font-semibold">1k+</h2>
+              <p>Rating & Review</p>
+            </div>
+          </div>
+          <button class="bg-blue-500 text-white p-3 shadow-lg my-7">
+            Read More
+          </button>
+        </div>
+      </section>
+      <!-- Registration -->
+      <section
+        class="container mx-auto bg-blue-500 p-5 flex justify-evenly items-center my-5"
+      >
+        <div>
+          <h2 class="text-5xl font-extrabold text-white p-3">Ready to join?</h2>
+          <p class="text-white">
+            It is a long established fact that a reader will be distracted by
+            the <br />
+            readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="justify-end">
+          <a
+            target="_blank"
+            href="reg.html"
+            class="_ text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+          >
+            Register Now
+          </a>
+        </div>
+      </section>
+      <!-- SuccessFull section-->
+      <section class="container mx-auto">
+        <!-- title -->
+        <div class="my-10">
+          <h2 class="text-3xl font-bold">
+            Meet Our Successfull <br />
+            Students
+          </h2>
+          <p class="my-4">
+            It is a long established fact that a reader will be distracted by
+            the <br />
+            readable content of a page when looking at its layou
+          </p>
+        </div>
+        <!-- students -->
+        <div class="md:flex lg:flex justify-between gap-10 my-5">
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-lg"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="images/student/student-1.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Awlad Hossain
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                UIUX Designer
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-lg"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="images/student/student-2.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Jannatul Islam
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                UIUX Designer
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-lg"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="images/student/student-3.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Imran Hossain
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                UIUX Designer
+              </p>
+            </div>
+          </div>
+          <div
+            class="max-w-sm bg-white border border-gray-200 rounded-lg dark:bg-gray-800 dark:border-gray-700 shadow-lg"
+          >
+            <a href="#">
+              <img
+                class="rounded-t-lg"
+                src="images/student/student-4.png"
+                alt=""
+              />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Imran Hossain
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                UIUX Designer
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- button -->
+        <div class="flex justify-center items-center">
+          <button
+            class="bg-blue-700 text-white px-7 py-3 shadow-lg my-7 rounded-md"
+          >
+            View All
+          </button>
+        </div>
+      </section>
+      <!-- Feedback section -->
+      <section class="container mx-auto">
+        <div>
+          <h2 class="text-4xl font-bold text-center">Some Students Feedback</h2>
+          <p class="text-center p-5">
+            It is a long established fact that a reader will be distracted by
+            the readable <br />
+            content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div class="h-75 p-5 my-8 shadow-lg">
+            <div class="flex justify-between">
+              <img src="images/comma.png" alt="" />
+              <div class="flex">
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-regular fa-star text-orange-400"></i>
+              </div>
+            </div>
+            <div class="my-8">
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem.
+              </p>
+              <div class="flex my-8 gap-5">
+                <img src="images/student/student-5.png" alt="" />
+                <h2 class="text-2xl">Awlad Hossain</h2>
+              </div>
+            </div>
+          </div>
+          <div class="h-75 p-5 my-8 shadow-lg">
+            <div class="flex justify-between">
+              <img src="images/comma.png" alt="" />
+              <div class="flex">
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-solid fa-star text-orange-400"></i>
+                <i class="fa-regular fa-star text-orange-400"></i>
+              </div>
+            </div>
+            <div class="my-8">
+              <p>
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem.
+              </p>
+              <div class="flex my-8 gap-5">
+                <img src="images/student/student-6.png" alt="" />
+                <h2 class="text-2xl">Awlad Hossain</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Frequently Question -->
+      <section class="container mx-auto">
+        <div class="my-8">
+          <h2 class="text-4xl font-bold text-center">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-center my-10">
+            It is a long established fact that a reader will be distracted by
+            the readable <br />
+            content of a page when looking at its layout.
+          </p>
+        </div>
+        <div class="my-5" id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-collapse-body-1"
+            >
+              <span>What is Flowbite?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 rotate-180 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-1"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-1"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is an open-source library of interactive components
+                built on top of Tailwind CSS including buttons, dropdowns,
+                modals, navbars, and more.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out this guide to learn how to
+                <a
+                  href="/docs/getting-started/introduction/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >get started</a
+                >
+                and start developing websites even faster with components on top
+                of Tailwind CSS.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-2"
+            >
+              <span>Is there a Figma file available?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-2"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-2"
+          >
+            <div
+              class="p-5 border border-b-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Flowbite is first conceptualized and designed using the Figma
+                software so everything you see in the library has a design
+                equivalent in our Figma file.
+              </p>
+              <p class="text-gray-500 dark:text-gray-400">
+                Check out the
+                <a
+                  href="https://flowbite.com/figma/"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >Figma design system</a
+                >
+                based on the utility classes from Tailwind CSS and components
+                from Flowbite.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-collapse-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              data-accordion-target="#accordion-collapse-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-collapse-body-3"
+            >
+              <span
+                >What are the differences between Flowbite and Tailwind
+                UI?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h2>
+          <div
+            id="accordion-collapse-body-3"
+            class="hidden"
+            aria-labelledby="accordion-collapse-heading-3"
+          >
+            <div
+              class="p-5 border border-t-0 border-gray-200 dark:border-gray-700"
+            >
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                The main difference is that the core components from Flowbite
+                are open source under the MIT license, whereas Tailwind UI is a
+                paid product. Another difference is that Flowbite relies on
+                smaller and standalone components, whereas Tailwind UI offers
+                sections of pages.
+              </p>
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                However, we actually recommend using both Flowbite, Flowbite
+                Pro, and even Tailwind UI as there is no technical reason
+                stopping you from using the best of two worlds.
+              </p>
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Learn more about these technologies:
+              </p>
+              <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                <li>
+                  <a
+                    href="https://flowbite.com/pro/"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Flowbite Pro</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://tailwindui.com/"
+                    rel="nofollow"
+                    class="text-blue-600 dark:text-blue-500 hover:underline"
+                    >Tailwind UI</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Trusted -->
+      <section>
+        <div>
+          <h2 class="text-5xl font-bold text-center my-10">
+            Trusted by over 800+ companies
+          </h2>
+        </div>
+        <div class="flex justify-evenly my-8">
+          <div>
+            <img src="images/company/company-1.png" alt="" />
+          </div>
+          <div>
+            <img src="images/company/company-2.png" alt="" />
+          </div>
+          <div>
+            <img src="images/company/company-3.png" alt="" />
+          </div>
+          <div>
+            <img src="images/company/company-4.png" alt="" />
+          </div>
+          <div>
+            <img src="images/company/company-5.png" alt="" />
+          </div>
+          <div>
+            <img src="images/company/company-6.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section class="bg-black p-10">
+        <h1 class="text-4xl font-bold text-white text-center p-5">Pro Edu</h1>
+        <p class="text-center text-white">
+          Office 41, Zawaya Buildin, Ghala Muscat, <br />
+
+          Sultanate of Oman <br />
+          Privacy Ploicy | Terms of use
+        </p>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  </body>
+</html>
